@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BO Account Opening Form</title>
+<style>
+  /* Add your CSS styling here */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <form id="boForm">
+    <h2>BO Account Opening Form</h2>
+    
+    <form id="accountForm2" enctype="multipart/form-data">
+      <div class="input-row">
+          <label for="application">Application:</label>
+          <input type="text" id="application" name="application">
+      </div>
+      <div class="input-row">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date">
+      </div>
+  
+      <div class="flex-item input-row">
+          <label for="category">BO Category:</label>
+          <select id="category" name="category" required>
+              <option value="regular">Regular</option>
+              <option value="omnibus">Omibus</option>
+              <option value="clearing">Clearing</option>
+          </select>
+      </div>
+  
+      <div class="input-row">
+          <label for="type">BO Type:</label>
+          <select id="boType" name="type">
+              <option value="Joint Holder">Joint Holder</option>
+              <option value="Company">Company</option>
+              <option value="Individual">Individual</option>
+          </select>
+      </div>
+  
+      <div class="input-row">
+          <label for="participant">Name of CDBL Participant:</label>
+          <input type="text" id="participant" name="participant">
+      </div>
+      <div class="input-row">
+          <label for="participantId">Participant ID:</label>
+          <input type="text" id="participantId" name="participantId">
+      </div>
+      <div class="input-row">
+          <label for="boId">BO ID:</label>
+          <input type="text" id="boId" name="boId">
+      </div>
+      <div class="input-row">
+          <label for="dateOpened">Date Account Opened:</label>
+          <input type="date" id="dateOpened" name="dateOpened">
+      </div>
+      <div class="input-row">
+        <label for="lslbranchName">Branch Name:</label>
+        <select id="lslbranchName" name="lslbranchName" required>
+            <option value="Principal">Principal Branch</option>
+            <option value="Chattogram">Chattogram Main Branch</option>
+            <option value="Khatungonj">Khatungonj Branch</option>
+            <option value="Banani">Banani Branch</option>
+            <option value="Nasirabad">Nasirabad Branch</option>
+            <option value="Uttara">Uttara BranchBanani Branch</option>
+            <option value="Sylhet">Sylhet Branch</option>
+            <option value="Dhanmondi">Dhanmondi Branch</option>
+            <option value="Cumilla">Cumilla Branch</option>
+            <option value="Narayangonj">Narayangonj Branch</option>
+        </select>
+    </div>
+  
+      <h3>1. First Applicant</h3>
+      <div class="input-row">
+          <label for="fullName">Name in Full of Account:</label>
+          <input type="text" id="fullName" name="fullName">
+      </div>
+      <div class="input-row">
+          <label for="shortName">Short Name of Account Holder:</label>
+          <input type="text" id="shortName" name="shortName">
+      </div>
+      <div class="input-row">
+          <label for="title">Title (Mr./Mrs./Ms):</label>
+          <select id="title" name="title">
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Ms.">Ms.</option>
+          </select>
+      </div>
+      <div class="input-row">
+          <label for="contactPerson">Name of Contact Person:</label>
+          <input type="text" id="contactPerson" name="contactPerson">
+      </div>
+      <div class="input-row">
+          <label for="fatherName">Father's / Husband's Name:</label>
+          <input type="text" id="fatherName" name="fatherName">
+      </div>
+      <div class="input-row">
+          <label for="motherName">Mother's Name:</label>
+          <input type="text" id="motherName" name="motherName">
+      </div>
+  
+      <h3>2. Contact Details</h3>
+      <div class="input-row">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address">
+      </div>
+      <div class="input-row">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city">
+      </div>
+      <div class="input-row">
+          <label for="postCode">Post Code:</label>
+          <input type="text" id="postCode" name="postCode">
+      </div>
+      <div class="input-row">
+          <label for="state">State/Division:</label>
+          <input type="text" id="state" name="state">
+      </div>
+      <div class="input-row">
+          <label for="telephone">Telephone:</label>
+          <input type="text" id="telephone" name="telephone">
+      </div>
+      <div class="input-row">
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country">
+      </div>
+      <div class="input-row">
+          <label for="mobile">Mobile Phone:</label>
+          <input type="text" id="mobile" name="mobile">
+      </div>
+      <div class="input-row">
+          <label for="fax">Fax:</label>
+          <input type="text" id="fax" name="fax">
+      </div>
+      <div class="input-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+      </div>
+
+      <h3>3. Passport Details</h3>
+      <div class="input-row">
+          <label for="passportNo">Passport No:</label>
+          <input type="text" id="passportNo" name="passportNo">
+      </div>
+      <div class="input-row">
+          <label for="issueDate">Issue Date:</label>
+          <input type="text" id="issueDate" name="issueDate">
+      </div>
+      <div class="input-row">
+          <label for="expireDate">Expire Date:</label>
+          <input type="text" id="expireDate" name="issueDate">
+      </div>
+
+      
+      <h3>4. Bank Details</h3>
+      <div class="input-row">
+          <label for="bankName">Bank name</label>
+          <input type="text" id="bankName" name="bankName">
+      </div>
+      <div class="input-row">
+          <label for="branchName">Branch Name</label>
+          <input type="text" id="branchName" name="branchName">
+      </div>
+      <div class="input-row">
+          <label for="accountNo">Account Number:</label>
+          <input type="text" id="accountNo" name="accountNo">
+      </div>
+
+      <div class="input-row">
+        <label for="routingNo">Route No:</label>
+        <input type="text" id="routingNo" name="routingNo">
+    </div>
+      <button id="createbutton" type="submit">Create Account</button>
+      
+  </form>
+
+  <button id="nextPage" type="submit">Next</button>
+  
+    
+
+  <script>
+    document.getElementById("boForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const formData = {
+        application: document.getElementById("application").value,
+        date: document.getElementById("date").value,
+        // category: Array.from(document.querySelectorAll('input[name="category"]:checked')).map(el => el.value),
+        // type: Array.from(document.querySelectorAll('input[name="type"]:checked')).map(el => el.value),
+        category: document.getElementById('category').value,
+        type: document.getElementById('boType').value,
+        participant: document.getElementById("participant").value,
+        participantId: document.getElementById("participantId").value,
+        lslbranchName:document.getElementById("lslbranchName").value,
+        boId: document.getElementById("boId").value,
+        dateOpened: document.getElementById("dateOpened").value,
+        fullName: document.getElementById("fullName").value,
+        shortName: document.getElementById("shortName").value,
+        title: document.getElementById("title").value,
+        contactPerson: document.getElementById("contactPerson").value,
+        fatherName: document.getElementById("fatherName").value,
+        motherName: document.getElementById("motherName").value,
+        address: document.getElementById("address").value,
+        city: document.getElementById("city").value,
+        postCode: document.getElementById("postCode").value,
+        state: document.getElementById("state").value,
+        telephone: document.getElementById("telephone").value,
+        country: document.getElementById("country").value,
+        mobile: document.getElementById("mobile").value,
+        fax: document.getElementById("fax").value,
+        email: document.getElementById("email").value,
+        passportNo : document.getElementById("passportNo").value,
+        issueDate : document.getElementById("issueDate").value,
+        expireDate : document.getElementById("expireDate").value,
+        bankName : document.getElementById("bankName").value,
+        branchName : document.getElementById("branchName").value,
+        accountNo : document.getElementById("accountNo").value,
+        routingNo : document.getElementById("routingNo").value,
+      };
+      console.log(formData);
+
+      // Make an AJAX call to save the form data
+      // Replace the URL with your actual API endpoint
+      const url = "http://localhost:8080/api/v1/bo";
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          alert("Form data saved successfully!");
+          const responseID = xhr.response;
+          window.location.href = `/nomineee/nominee.html?id=${responseID}` 
+        }
+      };
+      xhr.send(JSON.stringify(formData));
+    });
+
+
+  </script>
+  
+</body>
+</html>
