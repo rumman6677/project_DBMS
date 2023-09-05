@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #message {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Passport Size Image Upload</h1>
+    <form id="imageUploadForm" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="file">Select image:</label>
+        <input type="file" id="file" name="file" accept="image/*" required><br>
+        <button type="button" onclick="uploadImage()">Upload</button>
+    </form>
+
+    <h1>Nid Upload</h1>
+    <form id="imageUploadFormNid" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="file">Select image:</label>
+        <input type="file" id="file" name="file" accept="image/*" required><br>
+        <button type="button" onclick="uploadImageNid()">Upload</button>
+    </form>
+    <h1>Utility Upload</h1>
+    <form id="imageUploadFormUtility" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="file">Select image:</label>
+        <input type="file" id="file" name="file" accept="image/*" required><br>
+        <button type="button" onclick="uploadImageutility()">Upload</button>
+    </form>
+
+    <h1>E tin</h1>
+    <form id="imageUploadFormeid" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="file">Select image:</label>
+        <input type="file" id="file" name="file" accept="image/*" required><br>
+        <button type="button" onclick="uploadImageetin()">Upload</button>
+    </form>
+    <div id="message">
+        <img src="http://localhost:8080/image/1" alt="">
+    </div>
+
+    <script src="imageUploadScript.js">
+    </script>
+</body>
+</html>
